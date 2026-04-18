@@ -43,8 +43,8 @@ AtomicGYM/
 
 1. Configura las cadenas de conexión en:
    - `GYM_PW/appsettings.json`
-   - (si se usa en API) `API machines/SlnGestionMaquinas/GestionMaquinas/appsettings*.json`
-2. Configura credenciales reales para SMTP y evita versionar secretos.
+   - `API machines/SlnGestionMaquinas/GestionMaquinas/appsettings*.json` (si la API usa conexión a base de datos en tu entorno)
+2. Configura credenciales SMTP en la sección `Email` de `GYM_PW/appsettings*.json` y evita versionar secretos usando User Secrets o variables de entorno.
 3. Verifica la URL de la API usada por la web en `ApiMachines:Url`:
    - Archivo: `GYM_PW/appsettings.json`
    - Debe apuntar al host/puerto donde realmente se ejecuta `GestionMaquinas`.
