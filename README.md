@@ -81,4 +81,4 @@ dotnet build "API machines/SlnGestionMaquinas/SlnGestionMaquinas.sln"
 
 ## Estado actual
 
-El repositorio compila correctamente; existen advertencias de nulabilidad heredadas (actualmente no bloqueantes) que conviene tratar en tareas técnicas futuras.
+El repositorio compila correctamente; existen advertencias de nullable heredadas (actualmente no bloqueantes) que conviene tratar en tareas técnicas futuras.
