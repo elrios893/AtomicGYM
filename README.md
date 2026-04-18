@@ -42,11 +42,11 @@ AtomicGYM/
 ## Configuración local
 
 1. Configura las cadenas de conexión en:
-   - `/home/runner/work/AtomicGYM/AtomicGYM/GYM_PW/appsettings.json`
-   - (si se usa en API) `/home/runner/work/AtomicGYM/AtomicGYM/API machines/SlnGestionMaquinas/GestionMaquinas/appsettings*.json`
+   - `GYM_PW/appsettings.json`
+   - (si se usa en API) `API machines/SlnGestionMaquinas/GestionMaquinas/appsettings*.json`
 2. Configura credenciales reales para SMTP y evita versionar secretos.
 3. Verifica la URL de la API usada por la web en `ApiMachines:Url`:
-   - Archivo: `/home/runner/work/AtomicGYM/AtomicGYM/GYM_PW/appsettings.json`
+   - Archivo: `GYM_PW/appsettings.json`
    - Debe apuntar al host/puerto donde realmente se ejecuta `GestionMaquinas`.
 
 ## Ejecución
@@ -54,31 +54,30 @@ AtomicGYM/
 ### 1) API de máquinas
 
 ```bash
-cd "/home/runner/work/AtomicGYM/AtomicGYM/API machines/SlnGestionMaquinas/GestionMaquinas"
+cd "API machines/SlnGestionMaquinas/GestionMaquinas"
 dotnet run
 ```
 
 ### 2) Web MVC
 
 ```bash
-cd /home/runner/work/AtomicGYM/AtomicGYM/GYM_PW
+cd GYM_PW
 dotnet run
 ```
 
 ## Compilación
 
 ```bash
-cd /home/runner/work/AtomicGYM/AtomicGYM
 dotnet build GYM_PW.sln
 dotnet build "API machines/SlnGestionMaquinas/SlnGestionMaquinas.sln"
 ```
 
 ## Base de datos
 
-- Script de referencia: `/home/runner/work/AtomicGYM/AtomicGYM/persistencia/script.sql`
+- Script de referencia: `persistencia/script.sql`
 - Migraciones:
-  - Web: `/home/runner/work/AtomicGYM/AtomicGYM/GYM_PW/Migrations`
-  - API: `/home/runner/work/AtomicGYM/AtomicGYM/API machines/SlnGestionMaquinas/GestionMaquinas/Migrations`
+  - Web: `GYM_PW/Migrations`
+  - API: `API machines/SlnGestionMaquinas/GestionMaquinas/Migrations`
 
 ## Estado actual
 
