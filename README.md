@@ -43,7 +43,7 @@ AtomicGYM/
 
 1. Configura las cadenas de conexión en:
    - `GYM_PW/appsettings.json`
-   - `API machines/SlnGestionMaquinas/GestionMaquinas/appsettings*.json` (si la API usa conexión a base de datos en tu entorno)
+   - `API machines/SlnGestionMaquinas/GestionMaquinas/appsettings*.json` (si la API usa una conexión a base de datos en tu entorno)
 2. Configura credenciales SMTP en la sección `Email` de `GYM_PW/appsettings*.json` y evita versionar secretos usando User Secrets o variables de entorno.
 3. Verifica la URL de la API usada por la web en `ApiMachines:Url`:
    - Archivo: `GYM_PW/appsettings.json`
@@ -81,4 +81,4 @@ dotnet build "API machines/SlnGestionMaquinas/SlnGestionMaquinas.sln"
 
 ## Estado actual
 
-El repositorio compila correctamente; existen advertencias de nullable heredadas (actualmente no bloqueantes) que conviene tratar en tareas técnicas futuras.
+El repositorio compila correctamente; existen advertencias heredadas de *nullable reference types* en el código actual (no bloqueantes) que conviene tratar en tareas técnicas futuras.
